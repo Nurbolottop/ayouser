@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('./assets/Font/Bicubik.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'second';
+  src: url('./assets/Font/PP\ Neue\ Machina/PPNeueMachina-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'second', sans-serif !important;
+  background-color: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+.container {
+  width: 100%;
+  max-width: 1432px;
+  margin: 0 auto;
+}
+
+.bubliktext {
+  font-family: 'MyCustomFont', sans-serif;
+
+}
+
+.ant-input {
+  border: 1px solid rgb(175, 37, 28) !important;
+  padding: 13px !important;
+  border-radius: 10px !important;
+
+
+}
+
+.ant-input-outlined {
+  border: 1px solid rgb(175, 37, 28) !important;
+
+}

@@ -1,0 +1,7 @@
+.promo_list {
+    width: calc(50% - 10px) !important;
+
+    @media (max-width:700px) {
+        width: 100%;
+    }
+}

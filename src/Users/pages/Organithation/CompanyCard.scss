@@ -1,0 +1,274 @@
+@font-face {
+    font-family: 'second';
+    src: url('../../../assets/Font/PP\ Neue\ Machina/PPNeueMachina-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.company-card {
+    padding: 16px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-family: 'second', Arial, sans-serif;  // Применение шрифта
+
+    .company-card-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .back-btn {
+            background-color: #8B0000;
+            border: none;
+            color: #fff;
+            font-family: 'second';  // Применение шрифта
+        }
+
+        .company-info {
+            display: flex;
+            align-items: center;
+
+            .company-logo-placeholder {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: #ddd;
+                margin-right: 8px;
+            }
+
+            .company-name {
+                font-family: 'second';  // Применение шрифта
+                font-size: 16px;
+                color: #8B0000;
+            }
+        }
+
+        .company-category {
+            font-family: 'second';  // Применение шрифта
+            font-size: 12px;
+            color: #999;
+        }
+    }
+
+    .company-logo {
+        position: relative;
+        margin: 16px 0;
+
+        .logo-placeholder {
+            border-radius: 8px;
+            background-color: #e0e0e0;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'second';  // Применение шрифта
+            font-size: 14px;
+            color: #999;
+        }
+
+        .logo-actions {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+
+            .action-icon {
+                font-size: 20px;
+                color: #8B0000;
+                margin-left: 12px;
+                cursor: pointer;
+                font-family: 'second';  // Применение шрифта
+            }
+        }
+    }
+
+    .company-description {
+        font-size: 14px;
+        width: 100%;
+        color: #666;
+        margin: 16px 0;
+        font-family: 'second';  // Применение шрифта
+    }
+
+    .company-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        font-family: 'second';  // Применение шрифта
+
+        .social-button {
+            background-color: #8B0000;
+            border: none;
+            height: 40px;
+            font-family: 'second';  // Применение шрифта
+
+            &:hover {
+                background-color: #A52A2A;
+            }
+        }
+    }
+}
+
+.bonus-card-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    gap: 16px;
+    font-family: 'second';  // Применение шрифта
+
+    .bonus-card {
+        width: 22%;
+        padding: 16px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .bonus-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .bonus-icon {
+                font-size: 30px;
+                color: #8B0000;
+            }
+
+            .bonus-details {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                font-family: 'second';  // Применение шрифта
+
+                span {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #333;
+                }
+
+                .bonus-input {
+                    margin-top: 8px;
+                    width: 80px;
+                    border: none;
+                    background-color: #f0f0f0;
+                    text-align: center;
+                    font-family: 'second';  // Применение шрифта
+                }
+
+                .discount-button {
+                    margin-top: 8px;
+                    background-color: #8B0000;
+                    border: none;
+
+                    &:hover {
+                        background-color: #A52A2A;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.product-grid {
+    padding: 20px;
+    font-family: 'second';  // Применение шрифта
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-family: 'second';  // Применение шрифта
+    }
+
+    .product-grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .product-card {
+        .ant-card-body {
+            padding: 12px;
+            font-family: 'second';  // Применение шрифта
+        }
+
+        border: 1px solid #9b2821;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image-wrapper {
+            position: relative;
+
+            .product-image {
+                width: 100%;
+                height: 300px;
+                border-radius: 8px;
+                background-color: #f0f0f0;
+            }
+
+            .image-counter {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                background-color: rgba(0, 0, 0, 0.6);
+                color: #fff;
+                padding: 4px 8px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-family: 'second';  // Применение шрифта
+            }
+
+            .image-actions {
+                position: absolute;
+                top: 50%;
+                left: 8px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .action-btn {
+                    background-color: #8B0000;
+                    border: none;
+                    color: white;
+                    font-family: 'second';  // Применение шрифта
+
+                    &:hover {
+                        background-color: #A52A2A;
+                    }
+                }
+            }
+        }
+
+        .product-info {
+            margin-top: 16px;
+            display: flex;
+            justify-content: space-between;
+
+            .product-name {
+                font-size: 16px;
+                font-weight: bold;
+                font-family: 'second';  // Применение шрифта
+            }
+
+            .product-price {
+                display: block;
+                font-size: 18px;
+                color: #8B0000;
+                font-family: 'second';  // Применение шрифта
+            }
+
+            .product-description {
+                margin-top: 8px;
+                font-size: 14px;
+                color: #666;
+                font-family: 'second';  // Применение шрифта
+            }
+        }
+    }
+}

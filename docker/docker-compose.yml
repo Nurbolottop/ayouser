@@ -1,0 +1,15 @@
+# docker-compose.yml
+version: '3'
+
+services:
+  ayoadmin:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "5000:3000"
+    volumes:
+      - ../public:/app/public
+      - ../src:/app/src
+    environment:
+      - NODE_ENV=production

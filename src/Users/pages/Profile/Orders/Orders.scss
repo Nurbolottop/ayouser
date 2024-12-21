@@ -1,0 +1,34 @@
+.orders {
+  padding: 20px;
+
+  @media (max-width:500px) {
+    padding: 0;
+  }
+
+  .data__title {
+    margin-bottom: 30px;
+  }
+
+  .orders__empty {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .orders__card {
+    border-radius: 10px;
+  }
+
+  .orders__btn {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .orders__logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .data__save {
+    margin-top: 20px;
+  }
+}

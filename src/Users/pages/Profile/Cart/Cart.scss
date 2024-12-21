@@ -1,0 +1,100 @@
+.cart {
+  padding: 20px;
+
+  @media (max-width:500px) {
+    padding: 0;
+    width: 100%;
+
+  }
+}
+
+.cart__content-item {
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+
+}
+
+.cart__item-flex {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width:500px) {
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+.cart__item-image {
+  flex: 1;
+}
+
+.cart__item-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: PP Neue Machina;
+
+  padding-left: 20px;
+
+  @media (max-width:500px) {
+    width: 100%;
+  }
+}
+
+.cart__content-title {
+  font-family: PP Neue Machina !important;
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  line-height: 28.95px !important;
+  text-align: left !important;
+
+}
+
+.cart__content-price {
+  font-size: 18px !important;
+  color: #000 !important;
+  font-family: PP Neue Machina !important;
+
+
+}
+
+.cart__content-text {
+  font-family: PP Neue Machina !important;
+
+}
+
+.cart__item-quantity {
+  background-color: white;
+  height: fit-content;
+  padding: 5px 1rem;
+  border-radius: 10px;
+}
+
+.cart__quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart__quantity-value {
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.quantity-button {
+  background-color: transparent;
+  border: none;
+}
+
+.cart__content-total {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.cart__total-flex {
+  display: flex;
+  justify-content: space-between;
+}
